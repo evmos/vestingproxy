@@ -8,6 +8,7 @@
 
 ```sh
 git clone http://github.com/evmos/vestingproxy
+cd vestingproxy
 go run main.go
 ```
 

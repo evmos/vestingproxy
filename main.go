@@ -32,7 +32,6 @@ func main() {
 		url := r.URL.RequestURI()
 		if strings.Contains(url, "/v2/vesting/") {
 			address := strings.Replace(url, "/v2/vesting/", "", 1)
-			fmt.Println(address)
 			getURL := fmt.Sprintf("https://proxy.evmos.org/evmos/vesting/v2/balances/%s", address)
 			resp, err := http.Get(getURL)
 			if err != nil {
