@@ -18,3 +18,8 @@ go run main.go 9090
 ```
 
 ## Docker
+
+```sh
+docker build -t vestingproxy --progress plain .
+docker run -p=8080:8080 vestingproxy
+```
